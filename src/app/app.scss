@@ -20,7 +20,19 @@ main {
   .date-row {
     display: grid;
     grid-template-columns: 3fr 3fr 2fr;
+    grid-template-areas: 'd t b';
     gap: $gap;
+  }
+
+  @media (max-width: 576px) {
+    .date-row {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        'd t'
+        'b b';
+      gap: 0 $gap;
+      margin-bottom: $gap;
+    }
   }
 
   .button-container {

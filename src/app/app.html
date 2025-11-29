@@ -35,7 +35,7 @@
       </mat-form-field>
 
       <div class="date-row">
-        <mat-form-field>
+        <mat-form-field style="grid-area: d">
           <mat-label>Дата початку польоту</mat-label>
           <input [formControlName]="'startDate'"
                  matInput [matDatepicker]="spicker" placeholder="ДД.ММ.ГГГГ">
@@ -43,7 +43,7 @@
           <mat-datepicker #spicker></mat-datepicker>
         </mat-form-field>
 
-        <mat-form-field>
+        <mat-form-field style="grid-area: t">
           <mat-label>Час початку польоту</mat-label>
           <input matInput
                  [matTimepicker]="stimepicker"
@@ -52,7 +52,7 @@
           <mat-timepicker-toggle [for]="stimepicker" matSuffix/>
         </mat-form-field>
 
-        <button matButton="filled" (click)="setCurrentTime('startDate')">Поточний час</button>
+        <button style="grid-area: b" matButton="filled" (click)="setCurrentTime('startDate')">Поточний час</button>
       </div>
 
       <mat-form-field>
@@ -62,7 +62,7 @@
       </mat-form-field>
 
       <div class="date-row">
-        <mat-form-field>
+        <mat-form-field style="grid-area: d">
           <mat-label>Дата закінчення польоту</mat-label>
           <input [formControlName]="'endDate'"
                  matInput [matDatepicker]="epicker" placeholder="ДД.ММ.ГГГГ">
@@ -70,7 +70,7 @@
           <mat-datepicker #epicker></mat-datepicker>
         </mat-form-field>
 
-        <mat-form-field>
+        <mat-form-field style="grid-area: t">
           <mat-label>Час закінчення польоту</mat-label>
           <input matInput
                  [matTimepicker]="etimepicker"
@@ -79,7 +79,7 @@
           <mat-timepicker-toggle [for]="etimepicker" matSuffix/>
         </mat-form-field>
 
-        <button matButton="filled" (click)="setCurrentTime('endDate')">Поточний час</button>
+        <button style="grid-area: b" matButton="filled" (click)="setCurrentTime('endDate')">Поточний час</button>
       </div>
 
       <mat-form-field>
