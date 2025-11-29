@@ -1,6 +1,7 @@
 {
   "name": "report-attunement-servitor",
   "version": "0.0.0",
+  "homepage": "https://reichsgraf.github.io/report-attunement-servitor/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
