@@ -6,8 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build:github": "ng build --output-path docs-temp --base-href /report-attunement-servitor/ && node copy-build.js"
   },
   "prettier": {
     "printWidth": 100,
@@ -40,6 +39,7 @@
     "@angular/build": "^21.0.1",
     "@angular/cli": "^21.0.1",
     "@angular/compiler-cli": "^21.0.0",
+    "fs-extra": "^11.3.2",
     "jsdom": "^27.1.0",
     "postcss": "^8.5.3",
     "typescript": "~5.9.2",
