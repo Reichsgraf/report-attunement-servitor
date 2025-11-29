@@ -1,0 +1,36 @@
+$gap: 1rem;
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto;
+
+  .form-generator {
+    width: 80%;
+    max-width: 600px;
+  }
+
+  .form {
+    display: grid;
+    grid-auto-flow: row;
+  }
+
+  .date-row {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    gap: $gap;
+  }
+
+  .button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $gap;
+  }
+
+  button {
+    height: 56px;
+    font-size: 1rem;
+  }
+}
